@@ -1,4 +1,4 @@
-# Duck-Maze
+# Duck Maze
 
 A maze game about helping a duck find its way back home.
 
