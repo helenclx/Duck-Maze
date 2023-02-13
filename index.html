@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Duck Maze</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leopard@^1/dist/index.min.css"
     />
   </head>
   <body>
-    <button id="greenFlag">Green Flag</button>
-    <div id="project"></div>
+    <main>
+      <h1>Duck Maze</h1>
+      <div class="project-desc">
+        <p>Bring the duck back to its home at the puddle!</p>
+        <p>Use the arrow keys or WASD keys to move the duck. Watch out for red walls!</p>
+      </div>
 
-    <script type="module">
-      import project from "./index.js";
+      <button id="greenFlag">Start the Game</button>
+      <div class="project-container">
+        <div id="project"></div>
 
-      project.attach("#project");
-
-      document.querySelector("#greenFlag").addEventListener("click", () => {
-        project.greenFlag();
-      });
-
-      // Autoplay
-      project.greenFlag();
-    </script>
+        <script type="module">
+          import project from "./index.js";
+  
+          project.attach("#project");
+  
+          document.querySelector("#greenFlag").addEventListener("click", () => {
+            project.greenFlag();
+          });
+  
+          /*
+          // Autoplay
+          project.greenFlag();
+          */
+        </script>  
+      </div>
+    </main>
   </body>
 </html>
