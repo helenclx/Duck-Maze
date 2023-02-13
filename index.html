@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Duck Maze</title>
-    <link
-      rel="stylesheet"
-      href="./style.css"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css"/>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leopard@^1/dist/index.min.css"
     />
+
+    <title>Duck Maze</title>
   </head>
   <body>
     <main>
@@ -20,24 +22,24 @@
       </div>
 
       <button id="greenFlag">Start the Game</button>
+      <a href="https://scratch.mit.edu/projects/799913073/" target="_blank"><button>Play on Scratch</button></a>
       <div class="project-container">
         <div id="project"></div>
-
-        <script type="module">
-          import project from "./index.js";
-  
-          project.attach("#project");
-  
-          document.querySelector("#greenFlag").addEventListener("click", () => {
-            project.greenFlag();
-          });
-  
-          /*
-          // Autoplay
-          project.greenFlag();
-          */
-        </script>  
       </div>
     </main>
+    <script type="module">
+      import project from "./index.js";
+
+      project.attach("#project");
+
+      document.querySelector("#greenFlag").addEventListener("click", () => {
+        project.greenFlag();
+      });
+
+      /*
+      // Autoplay
+      project.greenFlag();
+      */
+    </script>  
   </body>
 </html>
