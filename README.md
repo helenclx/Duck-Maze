@@ -4,8 +4,8 @@ A maze game about helping a duck find its way back home.
 
 Originally created on Scratch. Converted to JavaScript with [Leopard](https://leopardjs.com/). Repository created with CodeSandbox.
 
-[View the project on Scratch](https://scratch.mit.edu/projects/799913073/)
-[View the project on CodeSandbox](https://codesandbox.io/s/github/helenclx/Duck-Maze)]
+- [View the project on Scratch](https://scratch.mit.edu/projects/799913073/)
+- [View the project on CodeSandbox](https://codesandbox.io/s/github/helenclx/Duck-Maze)]
 
 
 ## Instructions:
