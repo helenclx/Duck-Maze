@@ -1,5 +1,7 @@
 # Duck Maze
 
+![](./Duck-Maze.png)
+
 A maze game about helping a duck find its way back home.
 
 Originally created on Scratch. Converted to JavaScript with [Leopard](https://leopardjs.com/). Repository created with CodeSandbox.
