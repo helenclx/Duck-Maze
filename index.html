@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://unpkg.com/leopard@^1/dist/index.min.css"
     />
+    <link rel="stylesheet" href="hhttps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap">
 
     <title>Duck Maze</title>
   </head>
@@ -21,12 +22,19 @@
         <p>Use the arrow keys or WASD keys to move the duck. Watch out for red walls!</p>
       </div>
 
-      <button id="greenFlag">Start the Game</button>
-      <a href="https://scratch.mit.edu/projects/799913073/" target="_blank"><button>Play on Scratch</button></a>
+      <div class="btn-container">
+        <button id="greenFlag">Start the Game</button>
+        <a href="https://scratch.mit.edu/projects/799913073/" target="_blank"><button>Play on Scratch</button></a>
+      </div>
+      
       <div class="project-container">
         <div id="project"></div>
       </div>
     </main>
+    <footer class="attribution">
+      Coded by <a href="https://helenclx.github.io/" target="_blank">Helen Chong</a>.
+    </footer>
+
     <script type="module">
       import project from "./index.js";
 
