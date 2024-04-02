@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./style.css"/>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leopard@^1/dist/index.min.css"
-    />
-    <link rel="stylesheet" href="hhttps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap">
+        <link rel="stylesheet" href="./style.css"/>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leopard@^1/dist/index.min.css"
+        />
+        <link rel="stylesheet" href="hhttps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap">
 
-    <title>Duck Maze</title>
-  </head>
-  <body>
-    <main>
-      <h1>Duck Maze</h1>
-      <div class="project-desc">
-        <p>Bring the duck back to its home at the puddle!</p>
-        <p>Use the arrow keys or WASD keys to move the duck. Watch out for red walls!</p>
-      </div>
+        <title>Duck Maze</title>
+    </head>
+    <body>
+        <main>
+            <h1>Duck Maze</h1>
+            <div class="project-desc">
+                <p>Bring the duck back to its home at the puddle!</p>
+                <p>Use the arrow keys or WASD keys to move the duck. Watch out for red walls!</p>
+            </div>
 
-      <div class="btn-container">
-        <button id="greenFlag">Start the Game</button>
-        <a href="https://scratch.mit.edu/projects/799913073/" target="_blank"><button>Play on Scratch</button></a>
-      </div>
-      
-      <div class="project-container">
-        <div id="project"></div>
-      </div>
-    </main>
-    <footer class="attribution">
-      Coded by <a href="https://helenclx.github.io/" target="_blank">Helen Chong</a>.
-    </footer>
+            <div class="btn-container">
+                <button id="greenFlag">Start the Game</button>
+                <a href="https://scratch.mit.edu/projects/799913073/" target="_blank"><button>Play on Scratch</button></a>
+            </div>
 
-    <script type="module">
-      import project from "./index.js";
+            <div class="project-container">
+                <div id="project"></div>
+            </div>
+        </main>
+        <footer class="attribution">
+            Coded by <a href="https://helenclx.github.io/" target="_blank">Helen Chong</a>.
+        </footer>
 
-      project.attach("#project");
+        <script type="module">
+            import project from "./index.js";
 
-      document.querySelector("#greenFlag").addEventListener("click", () => {
-        project.greenFlag();
-      });
+            project.attach("#project");
 
-      /*
-      // Autoplay
-      project.greenFlag();
-      */
-    </script>  
-  </body>
+            document.querySelector("#greenFlag").addEventListener("click", () => {
+                project.greenFlag();
+            });
+
+            /*
+            // Autoplay
+            project.greenFlag();
+            */
+        </script>
+    </body>
 </html>
