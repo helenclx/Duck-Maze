@@ -1,7 +1,14 @@
 /* ------------------- */
 /* Custom Properties   */
 /* ------------------- */
-:root
+:root {
+    --clr-body-bg: #e5f9ff;
+    --clr-h1: #007993;
+    --clr-btn-bg: #4CBF56;
+    --clr-white: #fff;
+
+    --ff-default: 'Roboto';
+}
 
 /* ------------------- */
 /* CSS Reset           */
@@ -89,9 +96,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: var(--ff-default), Arial, Helvetica, sans-serif;
     text-align: center;
-    background: #e5f9ff;
+    background-color: var(--clr-body-bg);
 }
 
 main {
@@ -100,7 +107,7 @@ main {
 
 h1 {
     font-size: 2.8rem;
-    color: #007993;
+    color: var(--clr-h1);
 }
 
 .project-desc {
@@ -119,8 +126,8 @@ h1 {
 
 button {
     padding: 0.5rem 2rem;
-    background-color: #4CBF56;
-    color: #fff;
+    background-color: var(--clr-btn-bg);
+    color: var(--clr-white);
     border: none;
     border-radius: 0.5rem;
     font-size: 1rem;
