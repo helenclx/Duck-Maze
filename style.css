@@ -118,6 +118,10 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .project-container {
     display: flex;
     align-items: center;
